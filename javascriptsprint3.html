@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> //INICIO DO CÓDIGO EM JAVASCRIPT//
+        
+
+
+    /*INÍCIO CARD 96 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
+     
+        //Criar duas variáveis do tipo string. Apresentar no console o resultado todo em uma linha.
+
+        var text1 = "Bom dia! ";
+        var text2 = "Hello World. Bem-vindo!"
+
+        console.log(text1 + text2);
+
+
+        //Criar um código para contar a quantidade de caracteres do conteúdo de uma variável STRING. Apresentar o resultado no console.
+
+        var word = "SuporteCel";
+
+        var count = word.length;
+
+        console.log(count);
+
+        //Criar um código para mostrar a terceira letra de uma palavra. Apresentar o resultado no console.
+
+        var myWord = "J1BTAX";
+
+        var myWordLowerCase = myWord[3].toLowerCase();
+
+        
+        console.log(myWordLowerCase);
+
+        //Criar um código para apresentar a quinta letra da palavra "Padawan". Apresentar o resultado no console.
+
+        var word = "Padawan";
+
+        console.log(word[4].toUpperCase());
+
+        //Criar um array com nome e idade. Apresentar o resultado no console.
+
+        var nameAge = ["Yoda", 246];
+
+        console.log(nameAge);
+
+        //Criar um código "do while" para incluir números até 5 dentro de um array. Apresentar o resultado no console.
+
+        var x = 10;
+
+        var z = [1,2];
+
+        do{
+         
+            z[0] = 9;
+           
+
+        }while (x <= 10);
+
+        console.log(z);
+
+
+
+
+
+    /*FIM CARD 96 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
+
+    /*Inicio card #97*/ 
+        //Cria códigos da terceira parte de Javascript//
+
+        //Nest Arrays//
+
+        //Example
+        var ourArray = [["the universe", 42],["everything", 101010]];
+
+        //Only change code below
+        var myArry =[["Bulls, 23"], ["white Sox", 45]];
+
+        //Array Data//
+        //Example
+        var ourArrray = [18,64,99];
+        ourArray[1] = 45;// ourArray now equals [18,45,99];
+
+        //setup
+        var myArray = [18,64,99];
+
+        // Only change code below this line.
+        myArray[0] = 45;
+        console.log(myArray);
+
+        //push()//
+        // Example 
+        var ourArray = ["stimpson", "J", "cat"];
+        ourArray.push(["happy","joy"]);
+        // ourArray now eguals ["Stimpson", "j", "cat", ["happy", "joy"]]
+
+        // Setup
+        var myArray = [["John", 23], ["cat", 2]];
+
+        // Only change code below this line.
+        myArray.push(["dog", 3]);
+
+        //pop()//
+        // Example 
+        var ourArray = [1,2,3];
+        var removedFromOurArray = ourArray.pop();
+
+        // removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+        // Setup
+        var myArray = [["John", 23], ["cat", 2]];
+
+        // Only change code below this line
+        var removedFrommyArray = myArray.pop();
+        console.log(myArray);
+
+        //shift()//
+        // Example
+        var ourArray = ["Stimpsin", "J", ["cat"]];
+        var removedFromOurArray = ourArray.shift();
+        // removedFromOurArray now equals "Stimpson" and ourArray now equals ["J",["cat"]]
+
+        // Setup
+        var myArray = [["John", 23], ["cat", 3]];
+
+        // Only change code below this line
+        var removedFrommyArray = myArray.shift();
+    /*Fim card #97*/
+
+    /*Inicio card #98*/ 
+        //Cria códigos da quarta parte de Javascript//	
+	//unshift()//
+	var ourArray = ["Stimpsin", "J", ["cat"]];
+	ourArray.shift();// ourArray now equal ["J", "cat"]
+	ourArray.unshift("Happpy");
+	var myArray = [["John", 23], ["cat", 3]];
+	myArray.shift();
+	myArray.unshift(["Paul", 35]);
+
+	//Shopping List//
+	var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs", 5]] 
+	//White Reusable with Functions//
+
+	function ourReusableFunction(){
+	    console.log("Heyya, Word");
+	}
+
+	ourReusableFunction();
+	function reusableFunction(){
+	    console.log("Hi Word")
+	}
+
+	reusableFunction(); 
+
+	//Arguments//
+	function ourFunctionWithArgs(a, b){
+	    console.log(a, b);
+	}
+	ourFunctionWithArgs(10, 5); // Outputs 5
+	function functionWithArgs(a, b) {
+	    console.log( a + b);
+	functionWithArgs(10, 5)
+
+	//Global Scope//
+	var myGlobal = 10;
+	functionfun1() {
+	    oopsGlobal = 5;
+	}
+	function fun2(){
+	    var output ="";
+	    if(typeof myglobal != "undefined"){
+	        output += "myGlobal: " + myGlobal;
+	    }
+ 	   if (typeof oopsGlobal != "undefined"){
+	        output += " oopsGlobal: " + ooppsGlobal;
+	    }
+	    console.log(output);
+	}
+	fin1();
+	fin2();
+ 
+	//Local Scope//
+	function myLocalScope(){
+	    var myVar = 5;
+	    console.log(myVar);
+	}
+	myLocalScope();
+
+	//Global vs Local Scope in Functions//
+	var outerWear = "T-Shirt";
+
+	function myOutfit() {
+	    var outerWear = "sweater";
+
+	    return outerWear;
+	}
+	console.log(myOutfit());
+	console.log(outerWear);
+	
+	//Return a Value from a Function//
+	function minusSeven(num){
+	    return num - 7;
+	}
+
+	console.log(minusSeven(10));
+	function timesfive(num){
+	    return num * 5;
+	}
+	console.log(timesfive(5)); 
+
+	//Assignment with a Returned Value//
+	var changed = 0;
+
+	function change(num) {
+	    return (num + 5)/ 3;
+	}
+
+	changed = change(10);
+
+
+	var processed = 0;
+
+	function processArg(num) {
+	    return (num +3) / 5;
+	}
+	processed = processArg(7);
+    /*Fim card #98*/
+
+    /*Inicio card #99*/ 
+	//Cria códigos da quinta parte de Javascript//
+	//Boolean Values//
+	function welcomeToBooleans(){
+	    return true;
+	}
+
+	//ls Statements//
+	function uorTrueOrFalse(inItTrue){
+	    if (isIttrue){
+	        return "Yes, it's true";
+	    }
+	    return "No, it's false";
+	}
+
+	function trueOrFalse(wasThatTrue){
+ 	       if (wasThatTrue){
+ 	           return"Yes, that was true";
+	        }
+	        return "No, that was false";
+
+	}
+
+	console.log(trueOrFalse(true));
+
+	//Equality Operators//
+	function testEqual(val) {
+	    if (val == 12) { // Change this line
+	        return"Equal";
+	    }
+	    return"not Egual";
+	}
+	console.log(testEqual(10))
+
+	//And / Or Operators//
+	function testLogicaAnd(val) {
+	    if (val <= 50 && val >= 25) { 
+ 	       return "Yes";
+ 	   }
+	    return "No";
+	}
+	testLogicaAnd(10);
+	function testLogicalOr(val) {
+	if (val < 10 || val > 20) { 
+    	    return "Outside";
+    	}
+	     return "Inside";
+	}
+	testLogicalOr(15);
+
+	//Else Statements//
+	function testElse(val) {
+    	var result = "";
+	if ( val > 5) { 
+       		result = "Bigger than 5";
+    	} else {
+		result = "5 or Smaller";
+    	}
+	     	return result;
+	}
+	testElse(4)
+ 
+	//Elfe ls Statements//
+	function testElseIf(val) {
+ 	   if ( val > 10) { 
+ 	     return "Greater than 10";
+ 	   } else if ( val < 5) { 
+ 	     return "Smaller than 5";
+ 	   } else{
+	      return "Between 5 and 10";
+ 	   }
+	testElseIf(7);
+
+    /*Fim card #99*/
+
+    /*Inicio card #100*/ 
+	//Cria códigos da sexta parte de Javascript//
+	//Chaining If Else Statements//
+	function testSize(num) {
+	    if (num < 5){ 
+	        return "Tiny"
+	    } else if (num < 10) {
+	        return "Small"
+	    } else if (num < 15) {
+	         return "Medium"   
+	    } else if (num < 20) {
+	        return "Large"
+	    } else {
+	        return "Huge"
+	    }
+	}
+	console.log(testSize(19));
+
+	//Switch Statements//
+	function caseInSwitch(val) {
+	    var answer = "";
+	    switch(val){
+	        case 1: 
+	        answer = "alpha";
+	        break;
+ 	       case 2: 
+ 	       answer = "beta";
+ 	       break;
+ 	       case 3: 
+   	      answer = "gamma";
+ 		break;
+	 	case 4: 
+	        answer = "delta";
+ 	       break;
+ 	}
+
+	    return answer;
+	}
+	console.log(caseInSwitch(1));
+
+	//Returning Boolean Values from Functions//
+	function isLess(a, b) {
+	    //Fix this code
+	    return a < b;
+	}
+	console.log(isLess(20, 15)); 
+
+	//Build Objects//
+	var ourdog = {
+	    "name":"Cam-per",
+	    "legs": 4,
+	    "tails": 1,
+	    "friends": ["everything!"]
+	}
+	var myDog={
+	    "name":"Quincy",
+	    "legs": 3,
+	    "tails": 2,
+	    "friends":[]  
+	}; 
+	
+	//Dot Notation//
+	var testObj = {
+	    "hat": "ballcap",
+	    "shirt": "jersey",
+	    "shoes": "cleats"
+	};
+	var hatValue = testObj.hat;     // Change this line
+	var shirtValue = testObj.shirt;   // Change this line	
+	//Bracket Notation//
+	var testObj = {
+	    "an entree": "hamburger",
+	    "my side": "veggies",
+	    "the drink": "water"
+	};
+	var entreeValue = testObj["an an entree"];    // Change this line
+	var drinkValue = testObj['the drink'];   // Change this line
+
+    /*Fim card #100*/
+    
+    /*Inicio card #101*/ 
+	//Cria códigos da sétima parte de Javascript//
+	//Variables
+	var testObj = {
+	    12: "Namath",
+	    16: "Montana",
+	    19: "Unitas"
+	};
+	var playerNumber= 16;    // Change this line
+	var player = testObj[playerNumber]   // Change this line 
+
+	//Updating Object Properties//
+	var ourdog = {
+	    "name":"Camper",
+	    "legs": 4,
+	    "tails": 1,
+	    "friends": ["everything!"]
+	}
+
+	ourDog.name = "Happy Camper";
+
+	//setup
+	var myDog={
+	    "name":"Quincy",
+	    "legs": 3,
+	    "tails": 2,
+ 	   "friends":["freeCodeCamp Campers"]  
+	};
+	myDog = "Happy coder"; 
+	
+	//Add New Properties to Object//
+	var ourdog = {
+ 	   "name":"Camper",
+	    "legs": 4,
+	    "tails": 1,
+	    "friends": ["everything!"]
+	}
+	ourDog.bark = "bow-wow";
+	var myDog={
+	    "legs": 3,
+	    "tails": 2,
+	    "friends":["freeCodeCamp Campers"]  
+	};
+	myDog['bark'] = "woof!";
+
+	//Delete Properties from Object//
+	function phoneticLookup(val){
+ 	   var result = "";
+
+	   var lookup = {
+ 	       "alpha": "Adams",
+ 	       "bravo": "Boston",
+ 	       "charlie": "Chicago",
+  	      "delta": "Denver",
+  	      "echo": "Easy",
+  	      "foxtrot": "frank"      
+ 	   };
+ 	   result = lookup[val];
+	   return result;
+	}
+	console.log(phoneticLookup("foxtrot"));
+	
+	//Testing Objects for Properties//
+	var myObj = {
+	    gift: "pony",
+ 	   pet: "kitten",
+	    bed: "sleigh"
+	};
+
+	function chechOjt(checkprop){
+	    // Your code here]
+	    if (myObj.hasOwnProperty(checkprop)){
+	        return myObj[checkprop];
+	    }else {
+	        return "Not Found"
+	    }
+	}
+	console.log(chechOjt("Hello"))
+
+	//Nested Objects//
+	var myStorage = {
+ 	   "car": {
+  	      "inside": {
+ 	           "glove box": "maps",
+ 	           "passenger seat": "crumbs"
+ 	       },
+ 	   "outside": {
+  	      "trunk": "jack"
+ 	       }
+  	  }
+	};
+
+	var gloveBoxContents = myStorage.car.inside["glove box"] ; // Change this line
+
+	console.log(gloveBoxContents); 
+    /*Fim card #101*/
+    </script> <!--FIM DO CÓDIGO EM JAVASCRIPT-->
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+/*folha de estilo CSS para o ProjetoPadawan.html e faleconosco.html*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+body {
+
+    background: linear-gradient(10000deg, #4f505c 16.62%, #a4a4a5 85.61%);
+    margin-left: 45px;
+    margin-right: 45px;
+
+
+}
+
+#outmargin {
+
+    background: linear-gradient(10000deg, #4f505c 16.62%, #a4a4a5 85.61%);
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+
+
+h1{
+
+    font-family:'Righteous', serif, 'Segoe UI';
+    font-size: 50px;
+    text-align: center;
+    color: rgb(45, 45, 117);
+
+    /*TESTE GIT PUSH PULL */
+
+
+}
+
+h2 {
+
+    font-family: 'Sarala', serif, 'Segoe UI';
+    /*font-size: 12px; -> comentado para que o tamanho da fonte seja padrão desta tag*/
+    text-align: left;
+    color: rgb(45, 45, 117);
+
+
+}
+
+h3 {
+
+    font-family: 'Sarala', serif, 'Segoe UI';
+    /*font-size: 12px; -> comentado para que o tamanho da fonte seja padrão desta tag*/
+    text-align: left;
+    color: black;
+
+}
+
+p {
+
+    font-family:'Sarala', serif, 'Segoe UI';
+    font-size: 14px;
+    text-align: left;
+    color: black;
+
+}
+
+div {
+
+    font-family: 'Sarala', serif, 'Segoe UI';
+    font-size: 14px;
+    text-align: left;
+    color: black;
+
+}
+
+
+table, th, td {
+
+    border-collapse: collapse;
+    border: 3px solid rgb(45, 45, 117);
+    padding: 5px;
+    text-align: center;
+
+}
+
+#tablestyle{
+    background-color:rgb(105, 105, 116);
+}
+
+
+label {
+
+    display: inline-block;
+    width: 160px;
+
+}
+
+img {
+
+    width: 300px;
+    border-radius: 30px;
+ }
+
+ol {
+    font-family: 'Sarala', serif, 'Segoe UI'
+}
+
+ul {
+    font-family: 'Sarala', serif, 'Segoe UI'
+}
+
+.botao-fale-conosco  {
+    background-color: rgb(19, 19, 53);
+    width: 130px;
+    height: 39px;
+    border-radius: 20px;
+    font-family: Sarala;
+    font-weight: 400;
+    font-size: 16px;
+    color: white 
+}
+
+.quemsomos  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto; 
+}
