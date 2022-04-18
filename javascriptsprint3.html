@@ -271,11 +271,11 @@
 	};
 	function fun2(){
 	    var output ="";
-	    if(typeof myglobal != "undefined"){
+	    if(typeof myGlobal != "undefined"){
 	        output += "myGlobal: " + myGlobal;
 	    };
  	   if (typeof oopsGlobal != "undefined"){
-	        output += " oopsGlobal: " + ooppsGlobal;
+	    	output += " oopsGlobal: " + oopsGlobal;
 	    };
 	    console.log(output);
 	};
@@ -496,7 +496,7 @@
 	var playerNumber= 16;    // Change this line//
 	var player = testObj[playerNumber]   // Change this line //
 	//Updating Object Properties//
-	var ourdog = {
+	var ourDog = {
 	    "name":"Camper",
 	    "legs": 4,
 	    "tails": 1,
@@ -554,7 +554,7 @@
 	};
 
 	function chechOjt(checkprop){
-	    // Your code here]
+	    // Your code here//
 	    if (myObj.hasOwnProperty(checkprop)){
 	        return myObj[checkprop];
 	    }else {
@@ -576,7 +576,7 @@
   	  }
 	};
 
-	var gloveBoxContents = myStorage.car.inside["glove box"] ; // Change this line
+	var gloveBoxContents = myStorage.car.inside["glove box"] ; // Change this line//
 
 	console.log(gloveBoxContents); 
     /*Fim card #101*/
