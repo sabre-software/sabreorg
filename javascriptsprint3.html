@@ -12,7 +12,312 @@
         
 	console.log("------------INÍCIO CÓDIGO CLARA------------")
 
-		//CLARA, INSERIR SEUS CÓDIGOS AQUI
+/*INÍCIO CARD 95 - Criar códigos da primeira parte de Javascript #95 - clara*/
+
+	//Criar um comentário em qualquer parte do código com os tipos de variáveis mostradas no vídeo.
+
+    /*var stringMyName = "Clara"
+    var number = 3
+
+    let myName = "Clara Raquel" 
+
+    const g = 9.807 m/s2
+     
+    */
+
+    //Criar um código para incrementar (++) um valor e decrementar (--) outro valor. Apresentar o resultado no console.
+
+	var numAleatorio = 3
+        console.log(numAleatorio)
+    
+        numAleatorio++;
+        console.log(numAleatorio)
+
+        numAleatorio--;
+        console.log(numAleatorio)
+
+    //Criar um código em que mostre o resto de uma divisão. Apresentar o resultado no console.
+
+        remainder = 14 % 5
+        console.log(remainder)
+
+
+
+    //Criar código para somar a própria variável com outro número. Criar também para multiplicar a própria variável com outro número.
+        var myNumber = 3;
+        console.log(myNumber)
+
+        myNumber+= 5;
+        console.log(myNumber)
+
+        myNumber *= 3;
+        console.log(myNumber)
+
+
+    //Criar um código que apresente no console o resultado de duas variáveis em uma única linha de código (console.log(""exemplo"" + variavel+""exemplo 2""+variavel)
+     
+        var myVar = "Essa é a primeira parte. " + "Essa é a segunda parte."
+        console.log(myVar)
+
+        var nome = "parte."
+      
+        console.log("Essa é a primeira " + nome+" E essa é a segunda "+nome)   
+         
+ 
+    //Criar um código para somar um valor com o valor da variável (valor+=). Apresentar o resultado no console.
+
+        var string = "Essa é a primeira parte. ";
+        string += "Essa é a segunda parte."
+        console.log(string)
+    
+/*fim CARD 95  Criar códigos da primeira parte de Javascript #95 - clara*/
+
+
+
+
+
+
+
+/*INÍCIO CARD 100 -  Criar códigos da sexta parte de Javascript #100- clara*/
+
+    /*Criar um código que tenha mais de um IF e ELSE. Apresentar o resultado no console.
+    Usar o seguinte parâmetro:
+        num < 5 - return ""Tiny""
+        num <10 - return ""Small""
+        num < 15 - return ""Medium""
+        num < 20 - return ""Large""
+        num >= 20 - return ""Huge"" */
+
+        function testeTamanho(num) {
+            if (num < 5) {return "Tiny"}
+            else if (num < 10) {return "Small"}
+            else if (num < 15) {return "Medium"}
+            else if (num < 20) {return "Large"}
+            else {return "Huge"}
+        }
+
+        console.log(testeTamanho(7));
+        console.log(testeTamanho(12));
+        console.log(testeTamanho(25));
+
+
+    /*Criar uma condição switch onde apresente da seguinte forma -> 
+        caso 1: Bom dia! Acessado case 1; 
+        caso 2: Boa tarde, feito acesso no case 2; 
+        caso 3: Boa noite. Está no case 3.*/
+        
+        
+        function casoEscolha(val){
+            var resposta = "";
+            switch(val) {
+                case 1: 
+                    resposta = "Bom dia! Acessado case 1.";
+                break;    
+                case 2:
+                    resposta = "Boa tarde, feito acesso no case 2.";
+                break;    
+                case 3:
+                    resposta = "Boa noite. Está no case 3.";
+                break;         
+            }
+        return resposta;    
+        }
+
+        console.log(casoEscolha(1));
+        console.log(casoEscolha(2));
+        console.log(casoEscolha(3));
+       
+    /*Criar uma condição IF e ELSE, onde SE as informações forem verdadeiras
+    (Ex.: 2 é maior que 1?), então retorne ""Verdadeiro"", SENÃO retorne ""Falsa"".*/
+
+        /*Essa abaixo funciona, mas há uma melhor
+        function maior(a, b) {
+            if (a > b)  {
+                return true;
+            } else  {
+                return false;
+            }
+        }
+        
+        console.log(maior(15, 10));*/
+
+        function maior(a, b) {
+            return a > b;
+        }
+        
+        console.log(maior(15, 10))
+        console.log(maior(5, 10))
+
+    //Criar objeto com as seguintes características: nome, pernas, caudas, e amigos. Apresentar o resultado no console.
+    
+        var gata =  {
+            "nome": "Estrela",
+            "pernas": 4,
+            "caudas": 1,
+            "amigos": ["Duas irmãs: Amora e Miyuki"]
+        };
+
+        console.log(gata)
+
+    //Criar um objeto com três características. Apresentar uma das características no console acessando a característica deste objeto.    
+
+        var objeto = {
+            "formato": "redondo",
+            "material": "borracha",
+            "cor": "rosa"
+        };
+
+        var formatoValue = objeto.formato;
+        var materialValue = objeto.material;
+        var corValue = objeto.cor;
+
+        console.log(formatoValue);
+        console.log(materialValue);
+        console.log(corValue);
+
+    /* Criar objeto com as seguintes características:
+        ""an entree"", 
+        ""my side"" e 
+        ""the drink"". 
+    Adicionar informação nestas características. Apresentar o resultado no console.*/    
+
+        var menu = {
+            "an entree": "filet à parmegiana",  
+            "my side": "arroz",
+            "the drink": "vinho"
+        };
+
+        var entreeValor = menu["an entree"];
+        var sideValor = menu["my side"];
+        var drinkValor = menu["the drink"];
+
+        console.log(entreeValor);
+        console.log(sideValor);
+        console.log(drinkValor);
+
+/*FIM CARD 100 -  Criar códigos da sexta parte de Javascript #100- clara*/
+
+
+
+
+
+
+
+/*INÍCIO CARD 101 - Criar códigos da sétima parte de Javascript #101 - clara*/
+
+    //Criar objeto que busque a descrição da característica através do número informado. Apresentar o resultado no console.
+        var time = {
+        1: "Santos",
+        9: "Gabigol",
+        10: "Neymar Jr",
+        20: "Hulk"
+        } 
+
+        var jogadorNo = 10;
+        var jogador = time[jogadorNo];
+
+        console.log(jogador)
+
+    //Criar objeto com as características abaixo. Criar código que atualize uma das informações da característica através de uma função. Apresentar resultado no console.
+
+    /*""name"" : ""Camper"",
+    ""legs"": 4,
+    ""tails"": 1,
+    ""friends"": [""everything!""]*/
+
+        var meuCachorro = {
+        "name": "Camper",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["everything!"]
+        }
+
+        console.log(meuCachorro)
+
+        meuCachorro.friends = ["myLife"]
+        console.log(meuCachorro)
+
+
+    /*Criar um objeto com as características abaixo. Criar código que inclua uma nova característica através de uma função. Apresentar o resultado no console.
+
+    ""name"" : ""Happy Coder"",
+    ""legs"": 4,
+    ""tails"": 1,
+    ""friends"": [""freeCodeCamp Campers""]*/
+
+
+        var meuDoguinho = {
+        "name" : "Happy Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"]
+        }
+
+        meuDoguinho.late = "au-au"
+        console.log(meuDoguinho)
+
+    /*Criar um objeto com as características abaixo. Criar código que delete uma característica já existente através de uma função. Apresentar o resultado no console.
+    ""name"" : ""Happy Coder"",
+    ""legs"": 4,
+    ""tails"": 1,
+    ""friends"": [""freeCodeCamp Campers""]
+    */
+
+        var meuAuAu = {
+        "name" : "Happy Coder",
+        "legs": 4,
+        "tails": 1,
+        "friends": ["freeCodeCamp Campers"],
+        "late": "auau"
+        }
+        console.log(meuAuAu)
+
+        delete meuAuAu.friends;
+        console.log(meuAuAu)
+
+
+    /*Criar um código para checar as propriedades de um objeto. Apresentar o resultado no console.*/
+        var meuObjeto = {
+        pesente: "chocolate",
+        embalagem: "caixa",
+        marca: "milka",
+        cor: "lilas",
+        formato: "coração"
+        };
+
+        function checkObj(checkProp) {
+        if (meuObjeto.hasOwnProperty(checkProp)) {
+            return meuObjeto[checkProp];
+            } 
+        else  {
+             return "Não encontrado"
+             }
+        }
+
+
+        console.log(checkObj("cor"));     
+
+
+   //Criar um objeto que possua outro objeto aninhado. Apresentar o resultado no console.
+
+        var viagemCarro = {
+            "carro": {
+                "dentro": {
+                    "porta luvas": "documentos",
+                    "bancoPassageiro": "bolsas"
+                    },
+                "fora": {
+                    "chicoCity": "malas",
+                    "teto": "bike"
+                }    
+            }
+        };
+
+        var conteudoPortaLuvas = viagemCarro.carro.dentro["porta luvas"];
+        console.log(conteudoPortaLuvas)
+
+/*FIM CARD 101 - Criar códigos da sétima parte de Javascript #101 - clara*/
+
 
 
 
