@@ -323,9 +323,9 @@
 
 	console.log("------------FIM CÓDIGO CLARA------------")
 	console.log("------------INÍCIO CÓDIGO GABRIEL------------")
-    /*INÍCIO CARD 96 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
+/*INÍCIO CARD 96 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
      
-        //Criar duas variáveis do tipo string. Apresentar no console o resultado todo em uma linha.
+    //Criar duas variáveis do tipo string. Apresentar no console o resultado todo em uma linha.
 
         var text1 = "Bom dia! ";
         var text2 = "Hello World. Bem-vindo!"
@@ -333,7 +333,7 @@
         console.log(text1 + text2);
 
 
-        //Criar um código para contar a quantidade de caracteres do conteúdo de uma variável STRING. Apresentar o resultado no console.
+    //Criar um código para contar a quantidade de caracteres do conteúdo de uma variável STRING. Apresentar o resultado no console.
 
         var word = "SuporteCel";
 
@@ -341,7 +341,7 @@
 
         console.log(count);
 
-        //Criar um código para mostrar a terceira letra de uma palavra. Apresentar o resultado no console.
+    //Criar um código para mostrar a terceira letra de uma palavra. Apresentar o resultado no console.
 
         var myWord = "J1BTAX";
 
@@ -350,24 +350,28 @@
         
         console.log(myWordLowerCase);
 
-        //Criar um código para apresentar a quinta letra da palavra "Padawan". Apresentar o resultado no console.
+    //Criar um código para apresentar a quinta letra da palavra "Padawan". Apresentar o resultado no console.
 
         var word = "Padawan";
 
         console.log(word[4].toUpperCase());
 
-        //Criar um array com nome e idade. Apresentar o resultado no console.
+    //Criar um array com nome e idade. Apresentar o resultado no console.
 
         var nameAge = ["Yoda", 246];
 
         console.log(nameAge);
 
        
-    /*FIM CARD 96 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
+/*FIM CARD 96 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
 
-	/*INÍCIO CARD 102 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
 
-        //Criar um código "do while" para incluir números até 5 dentro de um array. Apresentar o resultado no console.
+
+
+
+/*INÍCIO CARD 102 - Criar códigos da segunda parte de Javascript #96 - gbrcarruda*/
+
+     //Criar um código "do while" para incluir números até 5 dentro de um array. Apresentar o resultado no console.
 
         var x = 10;
 
@@ -388,7 +392,7 @@
         console.log(x);
         console.log("k: " + k);
 
-        //Criar um código que converta uma string para um número inteiro. Apresentar o resultado no console.
+    //Criar um código que converta uma string para um número inteiro. Apresentar o resultado no console.
 
         var string1 = '60';
 
@@ -404,7 +408,7 @@
         
         console.log(convertInt);
 
-        // Criar um código if com operador ternário. Apresentar o resultado no console.
+    // Criar um código if com operador ternário. Apresentar o resultado no console.
 
         function verifTrueFalse(a, b) {
 
@@ -416,7 +420,7 @@
         console.log(verifTrueFalse(3, 1));
 
 
-        //Criar um código if com operador ternário múltiplo. Apresentar o resultado no console.
+    //Criar um código if com operador ternário múltiplo. Apresentar o resultado no console.
 
 
         let numA = 1;
@@ -436,10 +440,13 @@
     // numConst++; -> ERROR! Test was success;
 
 
-    /*FIM CARD 102 - Criar códigos da segunda parte de Javascript #102 - gbrcarruda*/
+/*FIM CARD 102 - Criar códigos da segunda parte de Javascript #102 - gbrcarruda*/
 
 
-    /*INÍCIO CARD 103 - Criar códigos da nona parte de Javascript #103 - gbrcarruda*/
+
+
+
+/*INÍCIO CARD 103 - Criar códigos da nona parte de Javascript #103 - gbrcarruda*/
 
 	//criação de arrow function
 	var arrFunc = (num1, num2) => num1+num2;
@@ -458,22 +465,68 @@
 	const greeting = `Hello! I'm a new Padawan! My name is ${iAm.name}`;
 	console.log(greeting);
 
+    //Criar um código com simple fields, usando ""name"", ""age"", ""gender"". Apresentar o resultado no console.
+
+        /*este código está correto, mas há uma forma melhor de escrevê-lo
+        const criarPessoa = (name, age, gender) => {
+            return {
+                name: name,
+                age: age,
+                gender: gender
+            };
+        };*/
+        
+        const criarPessoa = (name, age, gender) => ( {name, age, gender } )
 
 
+        console.log(criarPessoa("Gabriel", 38, "masculino"));
 
+     //Criar uma class ""Vegetable"" onde esta classe irá gerar o dado 'carrot'. Apresentar o resultado no console.
+     
+        function fazerClasse() {
+            class Vegetable {
+                constructor(nome){
+                    this.nome = nome;
+                }
+            }
+            return Vegetable
+        } 
+        const Vegetable = fazerClasse();
+        const carrot = new Vegetable('carrot');
+        console.log(carrot.nome);
 
+    /*Criar um código utilizando get e set para obter e apresentar o valor em Celsius de uma determinada temperatura. 
+    A temperatura será informada em Farenheit e mostrada em Celsius. 
+    Criar utilizando uma classe. Apresentar o valor no console.*/
+    
+        function makeClass() {
+            class Thermostat {
+                constructor(temp)  {
+                    this._temp = 5/9 * (temp - 32)
+                }
+                get temperature() {
+                    return this._temp;
+                }
+                set temperature (updatedTemp) {
+                    this._temp = updatedTemp
+                }
+            }
+            return Thermostat
+        }
+        const Thermostat = makeClass();
+        const termos = new Thermostat(76);
+        let temp = termos.temperature;
+        termos.temperature = 26;
+        temp = termos.temperature;
+        console.log(temp);
 
-
-
-
-
-	/*FIM CARD 103 - Criar códigos da nona parte de Javascript #103 - gbrcarruda*/
+/*FIM CARD 103 - Criar códigos da nona parte de Javascript #103 - gbrcarruda*/
 
 	console.log("------------FIM CÓDIGO GABRIEL------------")
 
 	console.log("------------INÍCIO CÓDIGO MARCOS------------")
 
-    /* /*Inicio card #97*/ 
+/* /*Inicio card #97*/ 
         //Cria códigos da terceira parte de Javascript//
 
         //Nest Arrays//
